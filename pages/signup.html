@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Mental Health Platform</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header-outer">
+      <div class="base-wrapper">
+        <div class="header-inner">
+          <a class="header-logo" href="../index.html">MHP</a>
+          <div class="header-links">
+            <a href="./about.html">about us</a>
+            <a href="./services.html">services</a>
+            <a href="./contact.html">contact us</a>
+          </div>
+          <a class="btn-primary" href="./signup.html">Sign up</a>
+        </div>
+      </div>
+    </header>
+    <div class="signup">
+      <div class="base-wrapper">
+        <div class="signup-inner">
+          <form class="signup-form" id="form">
+            <input type="text" name="name" id="name" placeholder="Full Name*" />
+            <div id="name-error" class="error"></div>
+
+            <input type="text" name="email" id="email" placeholder="Email*" />
+            <div id="mail-error" class="error"></div>
+
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Phone Number*"
+            />
+            <div id="number-error" class="error"></div>
+
+            <div class="radio">
+              <p>Gender:</p>
+              <div class="radio-box">
+                <input
+                  type="radio"
+                  class="male"
+                  id="male"
+                  name="gender"
+                  value="male"
+                  checked
+                />
+                <label for="male">male</label>
+              </div>
+              <div class="radio-box">
+                <input
+                  type="radio"
+                  class="female"
+                  id="female"
+                  name="gender"
+                  value="female"
+                />
+                <label for="female">female</label>
+              </div>
+            </div>
+            <button class="signup-btn" type="submit">
+              <div class="btn-primary">SIGN UP</div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -8,12 +8,81 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  color: #4e6037;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #4e6037;
+  opacity: 0.8;
+  transition: all 0.8s;
+}
+
+a:hover {
+  color: #4e6037 !important;
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+input,
+textarea {
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #797979;
+  border: 2px solid #797979;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #000;
+}
+
+input:hover,
+textarea:focus {
+  border: 2px solid #e66842;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .base-wrapper {
   width: 80%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.radio {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  justify-content: left;
+}
+
+.radio-box {
+  display: flex;
+  gap: 8px;
+}
+
+.error {
+  color: #bb2124;
+  margin-right: auto;
+  padding: 0 10px;
+  font-size: 12px;
 }
 
 /* header */
@@ -60,15 +129,27 @@ body {
 
 .btn-primary {
   background-color: #e66842;
+  width: max-content;
   border-radius: 50px;
   padding: 15px 30px;
-  color: white;
+  color: white !important;
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .btn-primary:hover {
-  color: #e66842;
+  color: #e66842 !important;
+  background: white;
+}
+
+a.btn-primary {
+  color: white !important;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+a.btn-primary:hover {
+  color: #e66842 !important;
   background: white;
 }
 
@@ -218,4 +299,186 @@ body {
 
 .support-section-heading span {
   color: #e66842;
+}
+
+.support-section-body {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.support-section-body img {
+  width: 500px;
+}
+
+.support-section-body-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.support-section-body:nth-child(3) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* About */
+.about-main {
+  background-color: #e668423c;
+}
+
+.about-main h1 {
+  font-size: 44px;
+}
+
+.about-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  height: 70vh;
+  width: 75%;
+}
+
+.about-section-1 p {
+  color: black;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.about-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 30px;
+  height: 70vh;
+  text-align: right;
+  width: 75%;
+  margin-left: auto;
+}
+
+.about-section-2 h1 {
+  color: #e66842;
+}
+
+.about-section-2 p {
+  color: black;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* services */
+
+.services {
+  padding: 40px 0;
+}
+
+.services-title-1 {
+  background: #97cf4d68;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 25px;
+  border-radius: 50px;
+  width: max-content;
+  word-spacing: 2px;
+}
+
+.services-title-1 span {
+  color: #e66842;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.services-title-2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.services-part-1 {
+  line-height: 1.5;
+}
+.services-section-1 {
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  gap: 150px;
+}
+
+.services-part-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.services-part-2 img {
+  width: 400px;
+}
+
+.services-booking-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.services-booking {
+  background-color: #e668423c;
+}
+
+.services-booking-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.services-booking-2 img {
+  width: 500px;
+}
+
+/* About */
+.contact-inner {
+}
+
+.contact-form-section {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-form-section-1 {
+  width: 50%;
+}
+
+.contact-form-section-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signup-form {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.signup-btn .btn-primary {
+  width: 100% !important;
 }

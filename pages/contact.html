@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Mental Health Platform</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header-outer">
+      <div class="base-wrapper">
+        <div class="header-inner">
+          <a class="header-logo" href="../index.html">MHP</a>
+          <div class="header-links">
+            <a href="./about.html">about us</a>
+            <a href="./services.html">services</a>
+            <a href="./contact.html">contact us</a>
+          </div>
+          <a class="btn-primary" href="./signup.html">Sign up</a>
+        </div>
+      </div>
+    </header>
+    <div class="contact">
+      <div class="base-wrapper">
+        <div class="contact-inner">
+          <div class="contact-form-section">
+            <div class="contact-form-section-1">
+              <h1>We'd love to hear from you!</h1>
+              <p>
+                Drop us a message by filling this form and we'll get back to
+                you.
+              </p>
+            </div>
+            <div class="contact-form-section-2">
+              <form id="form">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name*"
+                />
+                <div id="name-error" class="error"></div>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address*"
+                />
+                <div class="error" id="mail-error"></div>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="Mobile Number*"
+                />
+                <div class="error" id="number-error"></div>
+                <textarea
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                ></textarea>
+                <button class="btn-primary" type="submit">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
